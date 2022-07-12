@@ -1,7 +1,6 @@
-import React from 'react';
-import { PushNotificationIOS } from 'react-native';
+import React from 'react'
 
-import { 
+import {
   Container,
   Header,
   UserWrapper,
@@ -9,7 +8,8 @@ import {
   User,
   Photo,
   UserGreeting,
-  Username
+  Username,
+  Icon
 } from './styles';
 
 export function Dashboard() {
@@ -18,8 +18,8 @@ export function Dashboard() {
       <Header>
         <UserWrapper>
           <UserInfo>
-            <Photo 
-              source={{ uri: 'https://avatars.githubusercontent.com/u/10060108?v=4'}}
+            <Photo
+              source={{ uri: 'https://avatars.githubusercontent.com/u/10060108?v=4' }}
             />
             <User>
               <UserGreeting>
@@ -29,8 +29,8 @@ export function Dashboard() {
                 Vitor
               </Username>
             </User>
-
           </UserInfo>
+          <Icon name="power" />
         </UserWrapper>
       </Header>
     </Container>
